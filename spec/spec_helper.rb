@@ -1,5 +1,11 @@
 require 'eldr'
 require 'slim'
+
+if ENV['COVERALLS_REPO_TOKEN']
+  require 'coveralls'
+  Coveralls.wear!
+end
+
 require_relative '../lib/eldr/rendering'
 
 require 'rack/test'

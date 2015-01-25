@@ -26,6 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec',               '3.1.0'
   spec.add_development_dependency 'rubocop',             '0.28.0'
   spec.add_development_dependency 'rack-test',           '0.6.3'
+  spec.add_development_dependency 'coveralls',           '~> 0.7'
   spec.add_development_dependency 'slim',                '3.0.1'
   spec.add_development_dependency 'rspec-html-matchers', '0.6.1'
 end
