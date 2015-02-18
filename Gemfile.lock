@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     eldr-rendering (0.0.1)
-      activesupport (~> 4.2)
+      activesupport (~> 4.0)
       eldr (~> 0.0)
       tilt (~> 1.4)
 
@@ -26,7 +26,7 @@ GEM
       thor (~> 0.19.1)
     diff-lcs (1.2.5)
     docile (1.1.5)
-    eldr (0.0.3)
+    eldr (0.0.4)
       fast_blank (= 0.0.2)
       mustermann (= 0.4.0)
       rack (~> 1.5)

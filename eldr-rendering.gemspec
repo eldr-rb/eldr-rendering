@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'eldr',          '~> 0.0'
   spec.add_dependency 'tilt',          '~> 1.4'
-  spec.add_dependency 'activesupport', '~> 4.2'
+  spec.add_dependency 'activesupport', '~> 4.0'
 
   spec.add_development_dependency 'bundler',             '~> 1.7'
   spec.add_development_dependency 'rake',                '10.4.2'
