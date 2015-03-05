@@ -15,6 +15,10 @@ module Eldr
       Rack::Response.new Tilt.new(find_template(path)).render(self), resp_code
     end
 
+    def partial(path, options = {}, &block)
+      Tilt.new(find_template(path), options).render(self, &block)
+    end
+
     def find_template(path)
       configuration.engine ||= 'slim'
       raise StandardError, 'Eldr::Rendering requires you to set config.views_dir' unless configuration.views_dir
