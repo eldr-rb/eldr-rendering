@@ -11,8 +11,10 @@ module Eldr
       end
     end
 
-    def render(path, resp_code = 200)
-      Rack::Response.new Tilt.new(find_template(path)).render(self), resp_code
+    def render(path, status: 200, layout: nil)
+      options = {}
+      options[:layout] = layout if layout
+      Rack::Response.new Tilt.new(find_template(path), options).render(self), status
     end
 
     def partial(path, options = {}, &block)

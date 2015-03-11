@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     eldr-rendering (0.0.1)
-      activesupport (~> 4.0)
+      activesupport (~> 4)
       eldr (~> 0.0)
       tilt (~> 1.4)
 
